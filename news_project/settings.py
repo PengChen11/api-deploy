@@ -14,15 +14,16 @@ import os
 import environ
 
 # using .env
-root = environ.Path(__file__) - 3  # get root of the project
+# root = environ.Path(__file__) - 3  # get root of the project
 env = environ.Env()
 environ.Env.read_env()  # reading .env file
 
-BASE_DIR = root()
+# BASE_DIR = root()
 
 DEBUG = env.bool('DEBUG', default=False)
 TEMPLATE_DEBUG = DEBUG
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # DATABASES = {'default': env.dict('DATABASE')}
 
 SECRET_KEY = env.str('SECRET_KEY')
