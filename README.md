@@ -1,7 +1,8 @@
 # Lab: API Deployment
 
 [Click here to connect to deployed site on MS Azure](http://52.247.232.82:8000/admin)
-It will take some time for DNS resulation.
+
+It will take some time for DNS resolution.
 
 ## Overview
 
